@@ -1,0 +1,125 @@
+/* Full page center */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d8eefe, #f5faff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Main glass card */
+.card {
+  width: 480px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Input group */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.8px solid #cbd6e2;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2b6cb0;
+  outline: none;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+  width: 48%;
+}
+
+.predict-btn {
+  background: #1d4ed8;
+  color: white;
+}
+
+.predict-btn:hover {
+  background: #153ea8;
+}
+
+.explain-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.explain-btn:hover {
+  background: #118a3f;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 25px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 6px solid #4b5563;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.high {
+  color: red;
+  font-weight: bold;
+}
+
+.low {
+  color: green;
+  font-weight: bold;
+}
+
+/* SHAP section */
+.explain-box, .suggest-box {
+  margin-top: 22px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
